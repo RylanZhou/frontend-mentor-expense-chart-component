@@ -20,6 +20,7 @@ function App() {
     const resize = () =>
       document.documentElement.style.setProperty('--height', window.innerHeight + 'px');
 
+    resize();
     window.addEventListener('resize', resize);
 
     return () => window.removeEventListener('resize', resize);
