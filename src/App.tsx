@@ -29,10 +29,10 @@ function App() {
   return (
     <div className={styles.App}>
       <div className={styles.container}>
-        <section className={styles.header}>
+        <header>
           <span>My balance</span>
           <h1>${balance}</h1>
-        </section>
+        </header>
 
         <main>
           <section className={styles.top}>
