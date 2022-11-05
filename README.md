@@ -1,6 +1,6 @@
-# Frontend Mentor - Notifications page solution
+# Frontend Mentor - Expenses Chart Component Solution
 
-This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -18,21 +18,22 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- [x] Distinguish between "unread" and "read" notifications
-- [x] Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
-- [x] View the optimal layout for the interface depending on their device's screen size
-- [x] See hover and focus states for all interactive elements on the page
+- [x] View the bar chart and hover over the individual bars to see the correct amounts for each day
+- [x] See the current day’s bar highlighted in a different colour to the other bars
+- [x] View the optimal layout for the content depending on their device’s screen size
+- [x] See hover states for all interactive elements on the page
+- [x] **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
 
-|        Desktop        |            Mobile            |
-| :-------------------: | :--------------------------: |
-| ![](./screenshot.png) | ![](./screenshot-mobile.png) |
+|        Desktop        |
+| :-------------------: |
+| ![](./screenshot.png) |
 
 ### Links
 
-- Solution URL: [Github](https://github.com/RylanZhou/frontend-mentor-notifications-page)
-- Live Site URL: [Vercel](https://frontend-mentor-notifications-page-chi.vercel.app/)
+- Solution URL: [Github](https://github.com/RylanZhou/frontend-mentor-expense-chart-component)
+- Live Site URL: [Vercel](https://frontend-mentor-expense-chart-component.vercel.app/)
 
 ## My process
 
@@ -48,8 +49,8 @@ Users should be able to:
 
 ### What I implemented
 
-1. Dynamically load data and update read/unread effect.
+1. Dynamically load data and set bar height.
 
-2. Fixed header so that it stays at the top of the screen.
+2. Animated label showup and bar height change.
 
-3. App stays in the center on wide desktop devices and stretch to fit the screen on narrower mobile devices.
+3. How to make the bar "grow" from the bottom of a container - add an empty block `<div className="placeholder">` in flex container and set it with `flex: 1` so that it "pushes" the rest element to the bottom.
